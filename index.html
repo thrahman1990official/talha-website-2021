@@ -3,22 +3,47 @@
   <head>
     <title>This is Talha Rahman's Website</title>
     <style>
-      
-      .profile-picture {border-radius: 50%;}
-      .name {font-family: 'Roboto', sans-serif; margin-bottom: 5px;}
-      
-      html, body {display: flex; align-items: center; justify-content: center; height: 100%, margin: 0px; padding: 0px; font-family: 'Open Sans', sans-serif;}
-      .wrapper {background-color: blue;}
-      
-      .left, .right {background-color: skyblue; margin: 5px;}
-      .left {align-items: center; justify-content: center; width: 40%;}
-      .right {align-items: center; justify-content: center; width: 60%;}
-      
-      .profile-picture {border-radius: 50%;}
-     
-      p {text-align: justify; margin: 10px;}
-      h1, h4 {font-color: white;}
-      
+.profile-picture {
+  border-radius: 50%;
+}
+
+html, body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper {
+  background-color: lightpink;
+  
+  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+}
+
+.left, .right {
+  background-color: lightblue;
+  
+  margin: 5px;
+  max-width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left {
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-picture {
+  border-radius: 50%;
+}
     </style>
   </head>
   <body>
@@ -26,21 +51,7 @@
       <div class="left" align="left">
         <img src="talha.png" class="profile-picture" alt="img" width="200" length="200">
         <h1 class="name">Talha Rahman</h1>
-        <h4 class="subtitle">Full-Stack Engineer</h4>
-      </div>
-      <div class="right">
-        <p class="bio">
-        Detail-oriented, accurate, precise, double 
-        Bachelors in Computer Science & Electrical 
-        Engineering, seeking opportunities in the 
-        fields of Fullstack Web-Development & Software 
-        Engineering. In the short-run, I wish to be an 
-        expert Full-Stack Engineer in a top IT company, 
-        and in the long-run I wish to become an influential
-        icon in the IT industry to motivate new graduates to 
-        never give up and tell them the struggles I had to 
-        make it to where I am.
-        </p>
+        <h4 class="subtitle">Full-Stack Engineer</h4>        
         <center>
         <ul class="social-links">
         <li><button class="btn btn-success" onclick="window.open('https://www.linkedin.com/in/talharahman1990/','_blank')">LinkedIn</button></li>
@@ -48,6 +59,15 @@
         <li><button class="btn btn-success" onclick="window.open('https://thrahman1990official.github.io/talha-website-2021-calender/','_blank')">Book-Time</button></li>
         </ul>
         </center>
+      </div>
+      <div class="right">
+        <p class="bio">
+        Detail-oriented, accurate, precise, double 
+        Bachelors in Computer Science & Electrical 
+        Engineering, seeking opportunities in the 
+        fields of Fullstack Web-Development & Software 
+        Engineering.
+        </p>
         </div>
       </div>
     </body>
